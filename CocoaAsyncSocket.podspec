@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'CocoaAsyncSocket'
-  s.version  = '7.4.2'
+  s.version  = '7.4.2-tv'
   s.license  = { :type => 'public domain', :text => <<-LICENSE
 Public Domain License
 
@@ -30,8 +30,10 @@ Updated and maintained by Deusty LLC and the Apple development community.
 
   # dispatch_queue_set_specific() is available in OS X v10.7+ and iOS 5.0+
   s.ios.deployment_target = '5.0'
+  s.tvos.deployment_target = '9.0'
   s.osx.deployment_target = '10.7'
 
   s.ios.frameworks = 'CFNetwork', 'Security'
+  s.tvos.frameworks = 'CFNetwork', 'Security'
   s.osx.frameworks = 'CoreServices', 'Security'
 end
